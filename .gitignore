@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Secrets — Firebase Admin SDK credentials. NEVER commit these; the admin
+# scripts (migrate.mjs, cleanup.mjs, migrate_to_cdudhane.mjs) read this file
+# locally at runtime and it is not needed for the app itself to build or run.
+serviceAccount.json
+*.serviceAccount.json
+.env
+.env.local
+.env.*.local
+
+# Firebase CLI local cache / debug logs
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Old manual build snapshots — regenerate with `npm run build`
+dist_KNOWN_GOOD_*/

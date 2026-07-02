@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Avoid a flash of the wrong background before React mounts + Tailwind's
+   `dark` class is applied. Matches the `cream` / `night` design tokens in
+   tailwind.config.js — kept as raw hex here since this fires before Tailwind
+   utilities are attached to the DOM. */
+html {
+  background-color: #f5f1ea; /* cream */
+}
+html.dark {
+  background-color: #16130f; /* night */
+}
