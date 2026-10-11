@@ -39,3 +39,4 @@ firestore-debug.log
 
 # Old manual build snapshots — regenerate with `npm run build`
 dist_KNOWN_GOOD_*/
+serviceAccount.json
